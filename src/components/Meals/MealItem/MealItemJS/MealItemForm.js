@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
-import Input from '../../UI/Input';
-import classes from './MealItemForm.module.css';
+import Input from '../../../../components/UI/UIJS/Input';
+import classes from '../../../../components/Meals/MealsCSS/MealsSummary.module.css';
 
 const MealItemForm = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
@@ -36,7 +36,7 @@ const MealItemForm = (props) => {
           min: '1',
           max: '5',
           step: '1',
-          defaultValue: '1',
+          defaultValue: '1'
         }}
       />
       <button>+ Add</button>
